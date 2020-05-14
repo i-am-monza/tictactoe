@@ -1,0 +1,163 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test suite for Game.jsx component Game component snapshot is the same with in repository 1`] = `
+<main
+  className="app row"
+  title="tic tac toe"
+>
+  <section
+    className="header col-12"
+  >
+    <header
+      title="tic tac toe header"
+    >
+      <h1
+        className="lead text-center md-1"
+      >
+        Tic Tac Toe
+      </h1>
+      <span
+        className="redos"
+      >
+        redo's:     
+        <cite
+          data-testid="x"
+          id="x"
+        >
+          X
+        </cite>
+         | 
+        <cite
+          data-testid="o"
+          id="o"
+        >
+          O
+        </cite>
+      </span>
+    </header>
+  </section>
+  <section
+    className="board col-8"
+    title="playing board"
+  >
+    <table
+      className="table table-borderless mt-3"
+    >
+      <tbody
+        data-testid="3x3 grid"
+      >
+        <tr>
+          <td>
+            <button
+              id="0"
+              onClick={[Function]}
+              title="Button 1"
+              type="button"
+            />
+          </td>
+          <td>
+            <button
+              id="1"
+              onClick={[Function]}
+              title="Button 2"
+              type="button"
+            />
+          </td>
+          <td>
+            <button
+              id="2"
+              onClick={[Function]}
+              title="Button 3"
+              type="button"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <button
+              id="3"
+              onClick={[Function]}
+              title="Button 4"
+              type="button"
+            />
+          </td>
+          <td>
+            <button
+              id="4"
+              onClick={[Function]}
+              title="Button 5"
+              type="button"
+            />
+          </td>
+          <td>
+            <button
+              id="5"
+              onClick={[Function]}
+              title="Button 6"
+              type="button"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <button
+              id="6"
+              onClick={[Function]}
+              title="Button 7"
+              type="button"
+            />
+          </td>
+          <td>
+            <button
+              id="7"
+              onClick={[Function]}
+              title="Button 8"
+              type="button"
+            />
+          </td>
+          <td>
+            <button
+              id="8"
+              onClick={[Function]}
+              title="Button 9"
+              type="button"
+            />
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+  <section
+    className="dashboard col"
+    title="progress dashboard"
+  >
+    <form
+      title="Progress dashboard"
+    >
+      <span
+        className="sub-head"
+      >
+        <button
+          onClick={[Function]}
+          title="Rewind button"
+        >
+          <i
+            className="fa fa-undo"
+            id="rewind"
+          />
+        </button>
+        <label
+          id="player"
+          title="Player O's turn"
+        >
+          O
+        </label>
+      </span>
+      <ol
+        data-testid="log"
+        id="log"
+      />
+    </form>
+  </section>
+</main>
+`;
