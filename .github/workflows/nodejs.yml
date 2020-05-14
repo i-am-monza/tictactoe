@@ -3,9 +3,10 @@
 
 name: Node.js CI for React App
 
-on:
-  push:
-    branches: [ test/testing-jest-features ]
+on: 
+    push:
+        branches: 
+            - test/testing-jest-features
 
 jobs:
   test:
