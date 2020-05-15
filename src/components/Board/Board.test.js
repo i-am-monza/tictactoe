@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { render} from '@testing-library/react';
-import { Board } from './Board.jsx';
+import { Board } from './board.jsx';
 
 describe('test cases for Board component', () => {
     const dummyProps = {
