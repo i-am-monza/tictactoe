@@ -1,6 +1,5 @@
 import React from 'react';
 
-// functional component Button accepting properties
 export const Button = props => {
     return (
         <button 
