@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import './../../assets/css/main.css';
-import { Board } from '../Board/Board.jsx';
-import { Dashboard } from '../Dashboard/Dashboard.jsx';
-import { Header } from '../Header/Header.jsx';
+import { Board } from '../board/board.jsx';
+import { Dashboard } from '../dashboard/dashboard.jsx';
+import { Header } from '../header/header.jsx';
 
 export class Game extends Component{
   constructor() {
