@@ -1,5 +1,6 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import ReactDOM from 'react-dom'
+
 import { render} from '@testing-library/react';
 import { Board } from './Board.jsx';
 
@@ -9,7 +10,7 @@ describe('test cases for Board component', () => {
             return "handleClick";
         }),
         getHistory: jest.fn(index => {
-            return "getHistory";
+            return "getHistory";z
         })
     };
 
