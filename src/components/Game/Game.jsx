@@ -11,7 +11,6 @@ export class Game extends Component{
   }
 
   handleClick = e => {
-    // prevent triggered action from component with form from reloading apgefont
     e.preventDefault();
     let historyCopy = this.state.history.slice();
     let stackCopy = this.state.movesStack.slice();
@@ -81,7 +80,6 @@ export class Game extends Component{
   }
 
   checkWinner = history => {
-    // keep track of number of plays
     let cap = 0;
 
     let lines = [
@@ -100,7 +98,7 @@ export class Game extends Component{
       if(history[a] && history[b] && history[c]) {
         cap++;
       }
-      // check for a winner
+      // check for a winner with this condition
       if(history[a] && history[b] === history[c] && history[c] === history[a]) {
         return history[a]
       }
