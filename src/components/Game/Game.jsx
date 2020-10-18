@@ -3,8 +3,14 @@ import './../../assets/css/main.css';
 import { Board } from '../Board/Board.jsx';
 import { Dashboard } from '../Dashboard/Dashboard.jsx';
 import { Header } from '../Header/Header.jsx';
+var cors = require('cors')
+
+this.use(cors()) // Use this after the variable declaration
 
 export class Game extends Component{
+  
+  urlAddress = 'https://localhost:5002';
+  
   constructor() {
     super();
     this.state = { isXTurn: false, history: Array(9).fill(null), movesStack: [], redos: { x: 0, o: 0} };
@@ -112,6 +118,19 @@ export class Game extends Component{
     }
   }
 
+  syncPlays = (player, position) => {
+    let requestOptions = {
+      mode: 'cors',
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json', 'Accept': 'application/json'},
+      body: JSON.stringify({ player, position })
+    };
+
+    fetch(this.urlAddress.concat('/CoinJar/increase'), requestOptions)
+    .then(response => response.json())
+    .then(data => console.log(data));
+  };
+
   render() {
     let win = this.checkWinner(this.state.history);
     
@@ -138,7 +157,8 @@ export class Game extends Component{
             isXTurn={ this.state.isXTurn } 
             moves={ this.state.movesStack } 
             getHistory={ this.getHistory } 
-            handleClick={ this.handleClick } 
+            handleClick={ this.handleClick }
+            syncPlays={ this.syncPlays } 
           />
         </section>
       </main>

@@ -18,7 +18,7 @@ export const Dashboard = (props) => {
         {props.moves.map((index) => {
           let player = props.getHistory(index);
           let log = `Player ${player} at tile ${Number.parseInt(index) + 1}`;
-
+          props.syncPlays(player, Number.parseInt(index) + 1);
           return (
             <li key={index} title="Play in history">
               {log}
